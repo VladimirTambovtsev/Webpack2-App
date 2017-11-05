@@ -34,7 +34,7 @@ module.exports = {
   		names: ['vendor', 'manifest']
   	}),
   	new HtmlWebpackPlugin({
-  		template: 'src/index.html'
+  		'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV);
   	})
   ]
 };
